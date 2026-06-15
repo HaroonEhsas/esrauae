@@ -5,23 +5,14 @@ workflows:
     triggering:
       events:
         - push
-    environment:
-      vars:
-        DEVELOPMENT_TEAM:
-          value: "ENTER_YOUR_TEAM_ID"
-          is_secret: false
-        BUNDLE_ID:
-          value: "io.gonative.ios"
-          is_secret: false
-        APP_STORE_CONNECT_ISSUER_ID:
-          value: "ENTER_ISSUER_ID"
-          is_secret: true
-        APP_STORE_CONNECT_KEY_ID:
-          value: "ENTER_KEY_ID"
-          is_secret: true
-        APP_STORE_CONNECT_PRIVATE_KEY:
-          value: "-----BEGIN PRIVATE KEY-----\nREPLACE_WITH_P8_CONTENT\n-----END PRIVATE KEY-----"
-          is_secret: true
+    # Environment variables should be configured in Codemagic UI (do not store secrets in repo)
+    # Example: create a variable group `app-store-credentials` in Codemagic and add
+    # DEVELOPMENT_TEAM, BUNDLE_ID, APP_STORE_CONNECT_ISSUER_ID, APP_STORE_CONNECT_KEY_ID,
+    # and APP_STORE_CONNECT_PRIVATE_KEY there. Then import the group into this workflow.
+    # To import a group, add:
+    # environment:
+    #   groups:
+    #     - app-store-credentials
     scripts:
       - name: Install Tuist
         script: |
