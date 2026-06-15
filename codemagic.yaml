@@ -41,8 +41,8 @@ workflows:
         script: |
           set -e
           # choose workspace: prefer generated MedianIOS, fall back to EsraUAESTORE
-          # Search recursively for an .xcworkspace first, then .xcodeproj
-          WORKSPACE=$(find . -name "*.xcworkspace" -print -quit 2>/dev/null || true)
+          # Search recursively for a normal .xcworkspace first, excluding hidden generated files
+          WORKSPACE=$(find . -name "*.xcworkspace" ! -path "*/._*" -print -quit 2>/dev/null || true)
           if [ -n "$WORKSPACE" ]; then
             SCHEME=$(basename "$WORKSPACE" .xcworkspace)
             echo "Found workspace: $WORKSPACE; using scheme: $SCHEME"
@@ -55,7 +55,7 @@ workflows:
               DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
               PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
           else
-            PROJECT=$(find . -name "*.xcodeproj" -print -quit 2>/dev/null || true)
+            PROJECT=$(find . -name "*.xcodeproj" ! -path "*/._*" -print -quit 2>/dev/null || true)
             if [ -n "$PROJECT" ]; then
               SCHEME=$(basename "$PROJECT" .xcodeproj)
               echo "No workspace found; using project: $PROJECT and scheme: $SCHEME"
