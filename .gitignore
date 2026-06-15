@@ -10,7 +10,7 @@ Pods/
 .idea
 
 # Tuist
-Derived/
+Derived/*
 !Derived/Sources/
 !Derived/Sources/**
 *.xcodeproj
