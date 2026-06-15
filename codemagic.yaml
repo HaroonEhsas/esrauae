@@ -16,14 +16,22 @@ workflows:
     scripts:
       - name: Install Tuist
         script: |
-          # Use Homebrew on macOS build machines to install Tuist (more reliable than remote install script)
+          # Ensure common brew paths and tuist bin are in PATH
+          export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.tuist/bin:$PATH"
           brew update || true
           brew tap tuist/tuist || true
           brew install tuist || true
-          which tuist || true
+          # Fallback to official installer if brew didn't provide tuist
+          if ! command -v tuist >/dev/null 2>&1; then
+            curl -Ls https://install.tuist.io | bash || true
+          fi
+          export PATH="$HOME/.tuist/bin:$PATH"
           tuist --version || true
       - name: Generate workspace
         script: |
+          # Ensure tuist is on PATH for this step as well
+          export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.tuist/bin:$PATH"
+          tuist --version || true
           tuist generate
       - name: Build archive
         script: |
