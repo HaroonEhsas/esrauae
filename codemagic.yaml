@@ -9,7 +9,7 @@ workflows:
     # Use the same App Store Connect API key name you added under:
     # Codemagic → Personal account → Integrations → Developer Portal → Manage keys
     integrations:
-      app_store_connect: codemagic
+      app_store_connect: Esra
     environment:
       groups:
         - app-store-credentials
