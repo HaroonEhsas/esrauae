@@ -7,11 +7,21 @@ workflows:
         - push
     environment:
       vars:
-        DEVELOPMENT_TEAM: ""
-        BUNDLE_ID: "io.gonative.ios"
-        APP_STORE_CONNECT_ISSUER_ID: ""
-        APP_STORE_CONNECT_KEY_ID: ""
-        APP_STORE_CONNECT_PRIVATE_KEY: ""
+        DEVELOPMENT_TEAM:
+          value: "ENTER_YOUR_TEAM_ID"
+          is_secret: false
+        BUNDLE_ID:
+          value: "io.gonative.ios"
+          is_secret: false
+        APP_STORE_CONNECT_ISSUER_ID:
+          value: "ENTER_ISSUER_ID"
+          is_secret: true
+        APP_STORE_CONNECT_KEY_ID:
+          value: "ENTER_KEY_ID"
+          is_secret: true
+        APP_STORE_CONNECT_PRIVATE_KEY:
+          value: "-----BEGIN PRIVATE KEY-----\nREPLACE_WITH_P8_CONTENT\n-----END PRIVATE KEY-----"
+          is_secret: true
     scripts:
       - name: Install Tuist
         script: |
