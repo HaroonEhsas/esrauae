@@ -3,6 +3,9 @@ build/
 xcuserdata
 *.xccheckout
 .DS_Store
+**/._*
+.tuist-state/
+.package.resolved
 Pods/
 .idea
 
