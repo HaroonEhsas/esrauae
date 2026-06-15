@@ -1,0 +1,76 @@
+workflows:
+  ios-release:
+    name: iOS Release Build
+    max_build_duration: 90
+    triggering:
+      events:
+        - push
+    environment:
+      vars:
+        DEVELOPMENT_TEAM:
+          value: ""
+          is_required: true
+          description: Apple Team ID to use for signing
+        BUNDLE_ID:
+          value: "io.gonative.ios"
+          is_required: true
+          description: App bundle identifier registered in App Store Connect
+        APP_STORE_CONNECT_ISSUER_ID:
+          value: ""
+          is_secret: true
+          description: App Store Connect Issuer ID
+        APP_STORE_CONNECT_KEY_ID:
+          value: ""
+          is_secret: true
+          description: App Store Connect Key ID
+        APP_STORE_CONNECT_PRIVATE_KEY:
+          value: ""
+          is_secret: true
+          description: App Store Connect private key content
+    scripts:
+      - name: Install Tuist
+        script: |
+          curl -Ls https://install.tuist.io | bash
+      - name: Generate workspace
+        script: |
+          tuist generate
+      - name: Build archive
+        script: |
+          xcodebuild -workspace MedianIOS.xcworkspace \
+            -scheme Median \
+            -configuration Release \
+            -sdk iphoneos \
+            archive \
+            -archivePath $CM_BUILD_DIR/build/Median.xcarchive \
+            DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
+            PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
+      - name: Export IPA
+        script: |
+          cat > ExportOptions.plist <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key>
+            <string>app-store</string>
+            <key>teamID</key>
+            <string>${DEVELOPMENT_TEAM}</string>
+            <key>uploadSymbols</key>
+            <true/>
+            <key>compileBitcode</key>
+            <false/>
+          </dict>
+          </plist>
+          EOF
+          xcodebuild -exportArchive \
+            -archivePath $CM_BUILD_DIR/build/Median.xcarchive \
+            -exportPath $CM_BUILD_DIR/build/ipa \
+            -exportOptionsPlist ExportOptions.plist
+    publishing:
+      app_store_connect:
+        should_upload: true
+        app_identifier: ${BUNDLE_ID}
+        api_key:
+          issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+          key_id: $APP_STORE_CONNECT_KEY_ID
+          private_key: $APP_STORE_CONNECT_PRIVATE_KEY
