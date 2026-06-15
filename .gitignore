@@ -11,6 +11,11 @@ Derived/
 *.xcodeproj
 *.xcworkspace
 !*.xcworkspace/contents.xcworkspacedata
+# Allow checked-in Xcode project and workspace for CI
+!EsraUAESTORE.xcodeproj/
+!EsraUAESTORE.xcodeproj/**
+!EsraUAESTORE.xcworkspace/
+!EsraUAESTORE.xcworkspace/**
 .tuist-cache/
 graph.json
 Extensions/

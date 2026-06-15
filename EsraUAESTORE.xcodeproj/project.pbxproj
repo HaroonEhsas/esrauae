@@ -1,0 +1,1162 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005E4F373254C56F831190B4 /* LEANLoadingSpinnerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1552590174B61C9DBC992B8F /* LEANLoadingSpinnerManager.m */; };
+		08D6E04DCE91EFFE43FF67FC /* offline.html in Resources */ = {isa = PBXBuildFile; fileRef = F8F1140B22E5FC1AD5515872 /* offline.html */; };
+		0A48ABE580F88EDE1186AE61 /* LaunchScreenNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DD06F110985157ED4A1C2 /* LaunchScreenNav.storyboard */; };
+		0A8F4A4948163DA8473596BD /* LEANProfilePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 38354EF458E1661C8AABA2B9 /* LEANProfilePicker.m */; };
+		0EBF2B2989B32B60979A0D2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C66A6FA846EF7C842E4A7BE /* GoogleService-Info.plist */; };
+		1A47321C0BFA5E3F6A7FE7E3 /* LEANUrlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C99C7C64FB8C5694A2028F /* LEANUrlInspector.m */; };
+		1E33472CFCD749B83BFC7809 /* CustomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F45FA6F28772288062E9A /* CustomMenu.swift */; };
+		23FB2B4C63750753C5A7FE8B /* LEANRegexRulesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377C16A76D4C6A4AE97216 /* LEANRegexRulesManager.m */; };
+		272115416C40B88E825D39FB /* LEANMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B412CF523C0C6C49AD3137B2 /* LEANMenuViewController.m */; };
+		2D0144D0CE38B0E176603129 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6941439B389A88DC1F8A403A /* Settings.bundle */; };
+		33002A9B52D602EB210492B9 /* WindowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F7F66EC8EB40FC4778F16 /* WindowsController.swift */; };
+		35BE5BFC6D51C1198351BE3B /* LEANPDFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C76BBFC7FDC808CF1BA670DA /* LEANPDFManager.m */; };
+		3763E357FB35239C4C1A9471 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDD55C5D7FE923494F9CF49 /* CFNetwork.framework */; };
+		391A27D3C361CDB77635E31C /* MenuChildNoIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14E95CD69AA8D691C1C1539 /* MenuChildNoIcon.xib */; };
+		3FE8A892CC20D88DD1519283 /* GoNativeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3413E65030388FF8C63F2CF9 /* GoNativeCore */; };
+		4007C453B8BF65EEF62FC9E9 /* GNFileWriterSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B3448D8EB04D76C53E9A0D /* GNFileWriterSharer.m */; };
+		42D706293E6EA554A1A001CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E20AF340431D97E43A3A15 /* Security.framework */; };
+		446BC278764DBA7FC957CBFE /* iosCustomJS.js in Resources */ = {isa = PBXBuildFile; fileRef = EFCE02B3CD4111ACB9C9C3ED /* iosCustomJS.js */; };
+		497C71E7D266EDE7A13794DA /* custom-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7280B84789DB56D23AB5DEF0 /* custom-icons.ttf */; };
+		51A5625CD1E6E0B25F56E538 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C6EE6891F7DD3BACCDE51E /* MessageUI.framework */; };
+		5322E77360570EF4FA084366 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 979EF7CA9D3A99EC91250AE2 /* Localizable.strings */; };
+		53D190EBB86DD7F592D7058F /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = CC252F362FB1ACB21EF61649 /* GTMNSString+HTML.m */; };
+		552F7CC54A5733B93A612209 /* LEANWindowsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A18F476181820B5935AF4751 /* LEANWindowsManager.m */; };
+		573B94C4B77F730CC698E14A /* GNBackgroundAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D447D9FBEE1BE356AB9FB49 /* GNBackgroundAudio.m */; };
+		5BEFB42BD0E5CFABEEC3CE36 /* LeanIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAF77679CB5382955801A20 /* LeanIOSTests.m */; };
+		5D25996D1DF61EDE88989AEF /* GNCustomHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CA9961A62E8541C1FA3CBF /* GNCustomHeaders.m */; };
+		5D81EF9132ECFA3557947455 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7998F067B2D68F5F4E733B /* QuartzCore.framework */; };
+		6293F5B304962900EC04EF04 /* customJS.js in Resources */ = {isa = PBXBuildFile; fileRef = 92E189F2AB1322C873AD9385 /* customJS.js */; };
+		643E2067FAC589BCD61A7A3D /* localCache.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8CE8C4CB7277C0EEFD98DC09 /* localCache.zip */; };
+		64826367E9D93543CD08D010 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C9866EC293CB33167EC4C1 /* UIView+REFrostedViewController.m */; };
+		65F65EEA6D03FD03DD8A9702 /* GNSwiftUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFDB65152A604A4A2302A0 /* GNSwiftUtilities.swift */; };
+		67710BD251F149D57C062D9E /* SidebarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3643FA6842119073D7E6A935 /* SidebarHeaderView.xib */; };
+		6886329073AEA8D72DD813A7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041093569D40976C3D87F83B /* Social.framework */; };
+		6AEAE609377A04B6579FCD10 /* LEANUrlCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE5D8BBA5B932332D06798 /* LEANUrlCache.m */; };
+		6C07F00C6FC09047589FE4BF /* TuistStrings+EsraUAESTORE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9273AE5E3F00286D929853CF /* TuistStrings+EsraUAESTORE.swift */; };
+		703AEEC5619F05BBA7A4510A /* LEANDocumentSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = 922C03CC6462B85818811F08 /* LEANDocumentSharer.m */; };
+		72A057907D91A9810A3C9320 /* LEANUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AFA889720BD6405F094F2F /* LEANUtilities.m */; };
+		74791CD33A378DE676DD39F8 /* LEANTabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B181AF6E072170F817997C2 /* LEANTabManager.m */; };
+		7529EF491154BA78C268F8D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30329F344F8ABB304A7424F2 /* Main.storyboard */; };
+		7723681FB68E86988C18A460 /* LEANLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D7798650720995FB364FD /* LEANLoginManager.m */; };
+		77519519E5BF448674629EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994EF72E402B14FEA19D3647 /* Assets.xcassets */; };
+		78A892A71DF7F3CB98DF3E9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B95BA325D832EA4A1D2C5C /* UIKit.framework */; };
+		798F00FC2BA6D95B59FE8BD3 /* GNLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BBD88ADA2A983BA5A3223F /* GNLogManager.m */; };
+		7D48DE426B7F31E7CC04DE71 /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = E7C3C060E372F17168FC9163 /* ZipArchive */; };
+		7E0EE07AA405E107CD0CA4E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B87C0A5322F4799B01F231A7 /* InfoPlist.strings */; };
+		7E180F918A0A9A128662AE99 /* LEANJsCustomCodeExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE93A789206671DE9FF78E8 /* LEANJsCustomCodeExecutor.m */; };
+		7EB1ECF0C4F24E5EA26AE72F /* GoNativeJSBridgeLibrary.js in Resources */ = {isa = PBXBuildFile; fileRef = 3902D1D7C22FDF22AF5BF740 /* GoNativeJSBridgeLibrary.js */; };
+		7F245B469A9070037F01AA10 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91578F271BB211CCE449BE6 /* MediaAccessibility.framework */; };
+		7FFF256BDA6145C37F4C58B5 /* GNJSBridgeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E914C5A7BF3452B3C527DD0B /* GNJSBridgeInterface.m */; };
+		808CD01B81F5238426A86F84 /* LEANWebViewIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9BF61382036989F207B9D /* LEANWebViewIntercept.m */; };
+		8325C2A25DB8F8A7D04A0945 /* MedianIcons in Frameworks */ = {isa = PBXBuildFile; productRef = CA9D54A1B05FDFABBE99A925 /* MedianIcons */; };
+		8392D38EE4B822D4C46F794F /* LEANLaunchScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC483DD61D389E96ABD8A2FE /* LEANLaunchScreenManager.m */; };
+		854D145C14B327A5F3F82E35 /* LEANRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A489AB469E78279D0045B54B /* LEANRootViewController.m */; };
+		85ED29C3CDC283891B71BE13 /* LEANKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F0D582B60D611BA3E0E762 /* LEANKeyboardManager.m */; };
+		89CEEB565D3FA5229E22B92B /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AEAFED90FE5C5AAAE87178 /* REFrostedViewController.m */; };
+		8BBDE0394C28636B977E0D77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2DB21FC3A54DAB41E44F40 /* Images.xcassets */; };
+		8D1142C86C24C032EACDC8EB /* customCSS.css in Resources */ = {isa = PBXBuildFile; fileRef = DE0FA6F761FCE0F1CAF829E7 /* customCSS.css */; };
+		8DBDF3847999A70AC3B9998A /* custom-icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E080A1EA32FC72B5BA0AA43 /* custom-icons.json */; };
+		8E6395B0E5191992BB20A23A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A003B9D9DE2A30D307575F /* Reachability.m */; };
+		8E679FF00ACFF49E21682470 /* GNRegistrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA879BA0D60C55F0EA833EA /* GNRegistrationManager.m */; };
+		8FD63EF31FD42BA854CC02F3 /* MedianEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D87E1942DDEE08D57FB11 /* MedianEventsManager.m */; };
+		9199A8EA8F6A2BA0AE83F0A5 /* ContextMenuHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC3F0234CB6CA9B4BDF3B1 /* ContextMenuHandler.swift */; };
+		967600707068F08553C2138E /* LEANConfigUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 094713F7CD838003C6CBEFCB /* LEANConfigUpdater.m */; };
+		97C57CC8C368B5652A0C69C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6D4BF140328D9B1C54F40 /* LaunchScreen.storyboard */; };
+		A1C65C745769E3B74EFB078E /* TuistAssets+EsraUAESTORE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC65E814D54F10BDC5F3A8CD /* TuistAssets+EsraUAESTORE.swift */; };
+		A2651EBE37ACC1BE1471E41C /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B4CB82551CA72534A5B8FB /* UIImage+REFrostedViewController.m */; };
+		A6DE2F73E68D358A135C472B /* LEANIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F29C7E1FB98D456E3C68EA /* LEANIcons.swift */; };
+		A826A82839C3F9E10657166F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45567743BFDAF12BDD7D93AC /* main.m */; };
+		AD052B7DA371A89324B278F3 /* iosHeaderImage in Resources */ = {isa = PBXBuildFile; fileRef = 77F80F26D0C431C8AD8CF749 /* iosHeaderImage */; };
+		AE1A6D09F27281C8730553A4 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE22D754D1CA79DC3734FFC0 /* AppTrackingTransparency.framework */; };
+		B2A7E2CB03152A0415BFD0F1 /* BlobDownloader.js in Resources */ = {isa = PBXBuildFile; fileRef = 1D5D402B008202906398140A /* BlobDownloader.js */; };
+		B55FAE7F27870FE9088E3FDB /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 909E026F9FDE75813CDDAC6C /* RECommonFunctions.m */; };
+		B5E358E3F3773EDE9D9AC5B3 /* LEANWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0CD5B92E68DC16858940E2 /* LEANWebViewController.m */; };
+		B6045A15AABA826CDE444EDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9844FCFF2BF9CCC68536323 /* Foundation.framework */; };
+		B9139417DB309EE10A7F7BA4 /* TuistFonts+EsraUAESTORE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999CA6176D8F6356CEB2E1EA /* TuistFonts+EsraUAESTORE.swift */; };
+		BA47E90EC7B18E8E5B261016 /* NSURL+LEANUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA90F69D0DD575EB4B54CB /* NSURL+LEANUtilities.m */; };
+		BE08501EB9F56995C01AB061 /* AppIcon in Resources */ = {isa = PBXBuildFile; fileRef = 772F45C3FC740E315EAEEC6D /* AppIcon */; };
+		C03102DFE8B4991D61C31D80 /* LEANNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B42583E485D5F6646459 /* LEANNavigationController.m */; };
+		C3FBA9FDA42CD32D74A65BCA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D9CB36D9D7CBB44BFF1C3F52 /* PrivacyInfo.xcprivacy */; };
+		C43AEAA74BD819F0CF092F40 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3B9F450346FCB89E693CBA /* SystemConfiguration.framework */; };
+		C44E3F216129D785BA0109CA /* WebViewViewportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862E9B655021DAC6F6997D39 /* WebViewViewportManager.swift */; };
+		C5C9F11F2BC76740886C2F0E /* MenuGroupIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CADA5AEC6AA0D7C1A6506C /* MenuGroupIcon.xib */; };
+		C7EADB314CCE047EB6533D17 /* GNConfigPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F98420D68B384E5229B944 /* GNConfigPreferences.m */; };
+		CCEBE8A7623A9829C9480B51 /* LEANWebViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 98233B2B2BF3F9E5271BAE59 /* LEANWebViewPool.m */; };
+		D30504CCC1FAC0A00E07E7FF /* LEANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06022BC99085DD2BE1CF59BD /* LEANAppDelegate.m */; };
+		D93CB0957ADD1C645F364AF9 /* iosCustomCSS.css in Resources */ = {isa = PBXBuildFile; fileRef = 7CCA827141E6B9A6A002588F /* iosCustomCSS.css */; };
+		DC682F3721A39FD05C5B7C11 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B11F2E6BE3EDF77E477876 /* AudioToolbox.framework */; };
+		DC6E7AE8A19C972C8B4DBDD6 /* appbeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 064BB82550EF93BC4FBAF860 /* appbeep.wav */; };
+		DDD1A3DBED3EC18272CF683F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E723F0536AA4E8D961054 /* CoreText.framework */; };
+		E0FF61D3A6B3A3A3B01DF8DB /* LaunchScreenNoNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113B29CAE4B57C066B0362F2 /* LaunchScreenNoNav.storyboard */; };
+		E107B4CCB8D9B252970D0DD4 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0380EC97C230AB081827956 /* UIApplication+Extensions.swift */; };
+		E2D2A46EB7321E1307A242F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00DCC049F0CA30D651DD96F /* CoreGraphics.framework */; };
+		E560CF3DF0C57D8A6873D243 /* LEANToolbarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F1E48949D990EBFA948E62 /* LEANToolbarManager.m */; };
+		E7C34B09B7596581061B9857 /* LEANActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 814C0FD43CCEC2ABDEA61EAB /* LEANActionManager.m */; };
+		E8FA120803FB44F50308C3A9 /* appConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 7757ECB1A117DABDA5AC7E85 /* appConfig.json */; };
+		EAE72EC1401413F238CD671E /* MenuChildIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8F462E69F84E76752548A32 /* MenuChildIcon.xib */; };
+		EAF18161F4D67EAED858DB76 /* TuistBundle+EsraUAESTORE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E52079F0D94AF835DCA808 /* TuistBundle+EsraUAESTORE.swift */; };
+		ECDCBA1976E5F2C031067B18 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BF511D373362C58498DC0F /* REFrostedContainerViewController.m */; };
+		EEF7A8B961240D51F3438CDE /* TuistPlists+EsraUAESTORE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18010DBBB7CBCFBCFCB1EF30 /* TuistPlists+EsraUAESTORE.swift */; };
+		EF50A52C94041C2DEF8ADF07 /* LEANInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6DFE298D39D2A6355EED4F /* LEANInstallation.m */; };
+		F0F20E86DD70383F841E1D54 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3731CC7F7A878516D77861E /* CoreLocation.framework */; };
+		F18DC1FF1864B22A255020F5 /* LiquidTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF1372645C987F82E1F620 /* LiquidTitleView.swift */; };
+		F61D60B3BE5CC8F101F019E3 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7F51D044F1DC9441464741 /* UIViewController+REFrostedViewController.m */; };
+		F727E8606FC7FA76A07C485A /* MenuGroupNoIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DFFA190459ED6372620AEF /* MenuGroupNoIcon.xib */; };
+		FC679C9AE76B6054D0E05725 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2CF402FB20DF98E565FB18E /* Accounts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4B53ABA8608E4B6FA83F954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252FE2F30AD9A5BB09425AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4C90D3B6C651CC83FAFE797;
+			remoteInfo = EsraUAESTORE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB89C7B7BC4D204C593F3401 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D7872D2A0D909D030A0C6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00AEAFED90FE5C5AAAE87178 /* REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		01B11F2E6BE3EDF77E477876 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		041093569D40976C3D87F83B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
+		044E723F0536AA4E8D961054 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		05DA90F69D0DD575EB4B54CB /* NSURL+LEANUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LEANUtilities.m"; sourceTree = "<group>"; };
+		06022BC99085DD2BE1CF59BD /* LEANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANAppDelegate.m; sourceTree = "<group>"; };
+		064BB82550EF93BC4FBAF860 /* appbeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appbeep.wav; sourceTree = "<group>"; };
+		07E52079F0D94AF835DCA808 /* TuistBundle+EsraUAESTORE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+EsraUAESTORE.swift"; sourceTree = "<group>"; };
+		094713F7CD838003C6CBEFCB /* LEANConfigUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANConfigUpdater.m; sourceTree = "<group>"; };
+		0BF9BF61382036989F207B9D /* LEANWebViewIntercept.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewIntercept.m; sourceTree = "<group>"; };
+		113B29CAE4B57C066B0362F2 /* LaunchScreenNoNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenNoNav.storyboard; sourceTree = "<group>"; };
+		1155F851F656CB3C3585BA20 /* nn-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nn-NO"; path = "nn-NO.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		13B4CB82551CA72534A5B8FB /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		15469A5C4119CEABE95DE67B /* EsraUAESTORE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsraUAESTORE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1552590174B61C9DBC992B8F /* LEANLoadingSpinnerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoadingSpinnerManager.m; sourceTree = "<group>"; };
+		17790BD69106F8790F42A2A2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		17DD222A6F48070412CC4921 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18010DBBB7CBCFBCFCB1EF30 /* TuistPlists+EsraUAESTORE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistPlists+EsraUAESTORE.swift"; sourceTree = "<group>"; };
+		18452464AE8C1FEB0873A85C /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		19AFA889720BD6405F094F2F /* LEANUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANUtilities.m; sourceTree = "<group>"; };
+		1AA879BA0D60C55F0EA833EA /* GNRegistrationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNRegistrationManager.m; sourceTree = "<group>"; };
+		1C2DD06F110985157ED4A1C2 /* LaunchScreenNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenNav.storyboard; sourceTree = "<group>"; };
+		1D3B9F450346FCB89E693CBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		1D447D9FBEE1BE356AB9FB49 /* GNBackgroundAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBackgroundAudio.m; sourceTree = "<group>"; };
+		1D5D402B008202906398140A /* BlobDownloader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BlobDownloader.js; sourceTree = "<group>"; };
+		1D6DFE298D39D2A6355EED4F /* LEANInstallation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANInstallation.m; sourceTree = "<group>"; };
+		1F2DB21FC3A54DAB41E44F40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21BF511D373362C58498DC0F /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		23A6F4AE40CBF05E99A8044F /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		25CADA5AEC6AA0D7C1A6506C /* MenuGroupIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuGroupIcon.xib; sourceTree = "<group>"; };
+		2627B27A555A6052116C5BA1 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2AF6D4BF140328D9B1C54F40 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B181AF6E072170F817997C2 /* LEANTabManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANTabManager.m; sourceTree = "<group>"; };
+		2CDC731A6837573245E206EE /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E36AB23118D1F6FEBEC9E27 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32C6EE6891F7DD3BACCDE51E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		358D7798650720995FB364FD /* LEANLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoginManager.m; sourceTree = "<group>"; };
+		3643FA6842119073D7E6A935 /* SidebarHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarHeaderView.xib; sourceTree = "<group>"; };
+		36F4464AD86B996371CA8668 /* MedianIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MedianIOSTests-Info.plist"; sourceTree = "<group>"; };
+		38354EF458E1661C8AABA2B9 /* LEANProfilePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANProfilePicker.m; sourceTree = "<group>"; };
+		3902D1D7C22FDF22AF5BF740 /* GoNativeJSBridgeLibrary.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = GoNativeJSBridgeLibrary.js; sourceTree = "<group>"; };
+		3A588424E5719C40A8C0F69A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C16C8A85188135C7B98368D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3C66A6FA846EF7C842E4A7BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E080A1EA32FC72B5BA0AA43 /* custom-icons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "custom-icons.json"; sourceTree = "<group>"; };
+		3EFC3F0234CB6CA9B4BDF3B1 /* ContextMenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuHandler.swift; sourceTree = "<group>"; };
+		44A003B9D9DE2A30D307575F /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		45567743BFDAF12BDD7D93AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C5D87E1942DDEE08D57FB11 /* MedianEventsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianEventsManager.m; sourceTree = "<group>"; };
+		4DFE9410DD58172F681B3AFA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4F7998F067B2D68F5F4E733B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		529F7F66EC8EB40FC4778F16 /* WindowsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsController.swift; sourceTree = "<group>"; };
+		54DFFA190459ED6372620AEF /* MenuGroupNoIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuGroupNoIcon.xib; sourceTree = "<group>"; };
+		5A377C16A76D4C6A4AE97216 /* LEANRegexRulesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANRegexRulesManager.m; sourceTree = "<group>"; };
+		61F1E48949D990EBFA948E62 /* LEANToolbarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANToolbarManager.m; sourceTree = "<group>"; };
+		63FFDB65152A604A4A2302A0 /* GNSwiftUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSwiftUtilities.swift; sourceTree = "<group>"; };
+		6941439B389A88DC1F8A403A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.cfbundle; path = Settings.bundle; sourceTree = "<group>"; };
+		6A5C597999BBAE6E1B20623E /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6BDD55C5D7FE923494F9CF49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		70F98420D68B384E5229B944 /* GNConfigPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNConfigPreferences.m; sourceTree = "<group>"; };
+		71980202F041B808D39A3F0F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7280B84789DB56D23AB5DEF0 /* custom-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "custom-icons.ttf"; sourceTree = "<group>"; };
+		73948EB7196D53F7C5DF08A3 /* MedianIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MedianIOS-Info.plist"; sourceTree = "<group>"; };
+		75D932E806ADB4D85F30F116 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		772F45C3FC740E315EAEEC6D /* AppIcon */ = {isa = PBXFileReference; path = AppIcon; sourceTree = "<group>"; };
+		7757ECB1A117DABDA5AC7E85 /* appConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = appConfig.json; sourceTree = "<group>"; };
+		77F80F26D0C431C8AD8CF749 /* iosHeaderImage */ = {isa = PBXFileReference; path = iosHeaderImage; sourceTree = "<group>"; };
+		7CCA827141E6B9A6A002588F /* iosCustomCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = iosCustomCSS.css; sourceTree = "<group>"; };
+		7D7D62C61E398913E5DA7C23 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E21B6F3F26F9B90CCBB4806 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7EE93A789206671DE9FF78E8 /* LEANJsCustomCodeExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANJsCustomCodeExecutor.m; sourceTree = "<group>"; };
+		814C0FD43CCEC2ABDEA61EAB /* LEANActionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANActionManager.m; sourceTree = "<group>"; };
+		81F29C7E1FB98D456E3C68EA /* LEANIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEANIcons.swift; sourceTree = "<group>"; };
+		844F45FA6F28772288062E9A /* CustomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenu.swift; sourceTree = "<group>"; };
+		862E9B655021DAC6F6997D39 /* WebViewViewportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewportManager.swift; sourceTree = "<group>"; };
+		8CAEEF99825AEB99750DF16A /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8CE8C4CB7277C0EEFD98DC09 /* localCache.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = localCache.zip; sourceTree = "<group>"; };
+		909E026F9FDE75813CDDAC6C /* RECommonFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		922C03CC6462B85818811F08 /* LEANDocumentSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANDocumentSharer.m; sourceTree = "<group>"; };
+		9273AE5E3F00286D929853CF /* TuistStrings+EsraUAESTORE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistStrings+EsraUAESTORE.swift"; sourceTree = "<group>"; };
+		92E189F2AB1322C873AD9385 /* customJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = customJS.js; sourceTree = "<group>"; };
+		98233B2B2BF3F9E5271BAE59 /* LEANWebViewPool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewPool.m; sourceTree = "<group>"; };
+		994EF72E402B14FEA19D3647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		999CA6176D8F6356CEB2E1EA /* TuistFonts+EsraUAESTORE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+EsraUAESTORE.swift"; sourceTree = "<group>"; };
+		9B301DC947C7A8CA29C55222 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A14E95CD69AA8D691C1C1539 /* MenuChildNoIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuChildNoIcon.xib; sourceTree = "<group>"; };
+		A18F476181820B5935AF4751 /* LEANWindowsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWindowsManager.m; sourceTree = "<group>"; };
+		A3E20AF340431D97E43A3A15 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A489AB469E78279D0045B54B /* LEANRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANRootViewController.m; sourceTree = "<group>"; };
+		A6A5B87E095E4511E9E09E91 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9CA9961A62E8541C1FA3CBF /* GNCustomHeaders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNCustomHeaders.m; sourceTree = "<group>"; };
+		AA7F51D044F1DC9441464741 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		B3E98A2D9C5CABEC8827DB21 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B412CF523C0C6C49AD3137B2 /* LEANMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANMenuViewController.m; sourceTree = "<group>"; };
+		B4854711904CD119519C8A3B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA47A0C7C04E49A44B8DE31C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BC483DD61D389E96ABD8A2FE /* LEANLaunchScreenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLaunchScreenManager.m; sourceTree = "<group>"; };
+		C1B95BA325D832EA4A1D2C5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C256EEE33B673260A4982701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4EF1372645C987F82E1F620 /* LiquidTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidTitleView.swift; sourceTree = "<group>"; };
+		C4F0D582B60D611BA3E0E762 /* LEANKeyboardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANKeyboardManager.m; sourceTree = "<group>"; };
+		C6C99C7C64FB8C5694A2028F /* LEANUrlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANUrlInspector.m; sourceTree = "<group>"; };
+		C76BBFC7FDC808CF1BA670DA /* LEANPDFManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANPDFManager.m; sourceTree = "<group>"; };
+		C7872186F3D4BF5BDFE054CF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C8F462E69F84E76752548A32 /* MenuChildIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuChildIcon.xib; sourceTree = "<group>"; };
+		CC252F362FB1ACB21EF61649 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		D00DCC049F0CA30D651DD96F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D3731CC7F7A878516D77861E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		D42FF417D42DC8701F1F3202 /* EsraUAESTORETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EsraUAESTORETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CB36D9D7CBB44BFF1C3F52 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DB160CC41F2F0DE68B65EDF2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DC4939E613B05EA38ABE1B75 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCBB10D7361967F3D5D8B8B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE0FA6F761FCE0F1CAF829E7 /* customCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = customCSS.css; sourceTree = "<group>"; };
+		E0380EC97C230AB081827956 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		E2BBD88ADA2A983BA5A3223F /* GNLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNLogManager.m; sourceTree = "<group>"; };
+		E2CF402FB20DF98E565FB18E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
+		E8B3448D8EB04D76C53E9A0D /* GNFileWriterSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNFileWriterSharer.m; sourceTree = "<group>"; };
+		E914C5A7BF3452B3C527DD0B /* GNJSBridgeInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNJSBridgeInterface.m; sourceTree = "<group>"; };
+		E9844FCFF2BF9CCC68536323 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EC73FCB099E46749281AB351 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF0CD5B92E68DC16858940E2 /* LEANWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewController.m; sourceTree = "<group>"; };
+		EFCE02B3CD4111ACB9C9C3ED /* iosCustomJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = iosCustomJS.js; sourceTree = "<group>"; };
+		F049C151D1C58C240EF3BAB1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F36B453C769687D8262CD74D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F6C9866EC293CB33167EC4C1 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		F6DE5D8BBA5B932332D06798 /* LEANUrlCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANUrlCache.m; sourceTree = "<group>"; };
+		F8F1140B22E5FC1AD5515872 /* offline.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = offline.html; sourceTree = "<group>"; };
+		F91578F271BB211CCE449BE6 /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaAccessibility.framework; sourceTree = DEVELOPER_DIR; };
+		F9FC9AF26E90C5F671FE9CCC /* gd */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gd; path = gd.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FC1F639714D7BAD9C2F87DAE /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FC3FEAD5B56C2D6569B830E8 /* Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Project.entitlements; sourceTree = "<group>"; };
+		FC65E814D54F10BDC5F3A8CD /* TuistAssets+EsraUAESTORE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+EsraUAESTORE.swift"; sourceTree = "<group>"; };
+		FCAF77679CB5382955801A20 /* LeanIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeanIOSTests.m; sourceTree = "<group>"; };
+		FCC5B42583E485D5F6646459 /* LEANNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANNavigationController.m; sourceTree = "<group>"; };
+		FE22D754D1CA79DC3734FFC0 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08CAEF0666242B5F13797654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C3CBE4977A277B1704D2CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC679C9AE76B6054D0E05725 /* Accounts.framework in Frameworks */,
+				AE1A6D09F27281C8730553A4 /* AppTrackingTransparency.framework in Frameworks */,
+				DC682F3721A39FD05C5B7C11 /* AudioToolbox.framework in Frameworks */,
+				3763E357FB35239C4C1A9471 /* CFNetwork.framework in Frameworks */,
+				E2D2A46EB7321E1307A242F4 /* CoreGraphics.framework in Frameworks */,
+				F0F20E86DD70383F841E1D54 /* CoreLocation.framework in Frameworks */,
+				DDD1A3DBED3EC18272CF683F /* CoreText.framework in Frameworks */,
+				B6045A15AABA826CDE444EDF /* Foundation.framework in Frameworks */,
+				7F245B469A9070037F01AA10 /* MediaAccessibility.framework in Frameworks */,
+				51A5625CD1E6E0B25F56E538 /* MessageUI.framework in Frameworks */,
+				5D81EF9132ECFA3557947455 /* QuartzCore.framework in Frameworks */,
+				42D706293E6EA554A1A001CD /* Security.framework in Frameworks */,
+				6886329073AEA8D72DD813A7 /* Social.framework in Frameworks */,
+				C43AEAA74BD819F0CF092F40 /* SystemConfiguration.framework in Frameworks */,
+				78A892A71DF7F3CB98DF3E9A /* UIKit.framework in Frameworks */,
+				3FE8A892CC20D88DD1519283 /* GoNativeCore in Frameworks */,
+				8325C2A25DB8F8A7D04A0945 /* MedianIcons in Frameworks */,
+				7D48DE426B7F31E7CC04DE71 /* ZipArchive in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1096EE9C70CBB3765157F608 /* LeanIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAF77679CB5382955801A20 /* LeanIOSTests.m */,
+				36F4464AD86B996371CA8668 /* MedianIOSTests-Info.plist */,
+			);
+			path = LeanIOSTests;
+			sourceTree = "<group>";
+		};
+		12492E2DCC09C9C5B776D2E7 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				2CECBC51DAE32C4A639C61B4 /* Derived */,
+				537EBEE22102605B33D3D0C0 /* LeanIOS */,
+				1096EE9C70CBB3765157F608 /* LeanIOSTests */,
+				3C66A6FA846EF7C842E4A7BE /* GoogleService-Info.plist */,
+				FC3FEAD5B56C2D6569B830E8 /* Project.entitlements */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		20CD3EC0EB22B00D377F22D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15469A5C4119CEABE95DE67B /* EsraUAESTORE.app */,
+				D42FF417D42DC8701F1F3202 /* EsraUAESTORETests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CECBC51DAE32C4A639C61B4 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				9E316CFF965F85EC70E5BA86 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		537EBEE22102605B33D3D0C0 /* LeanIOS */ = {
+			isa = PBXGroup;
+			children = (
+				B87C0A5322F4799B01F231A7 /* InfoPlist.strings */,
+				979EF7CA9D3A99EC91250AE2 /* Localizable.strings */,
+				30329F344F8ABB304A7424F2 /* Main.storyboard */,
+				D3327BD569E05D20E4DF1109 /* REFrostedViewController */,
+				064BB82550EF93BC4FBAF860 /* appbeep.wav */,
+				7757ECB1A117DABDA5AC7E85 /* appConfig.json */,
+				772F45C3FC740E315EAEEC6D /* AppIcon */,
+				994EF72E402B14FEA19D3647 /* Assets.xcassets */,
+				1D5D402B008202906398140A /* BlobDownloader.js */,
+				3EFC3F0234CB6CA9B4BDF3B1 /* ContextMenuHandler.swift */,
+				3E080A1EA32FC72B5BA0AA43 /* custom-icons.json */,
+				7280B84789DB56D23AB5DEF0 /* custom-icons.ttf */,
+				DE0FA6F761FCE0F1CAF829E7 /* customCSS.css */,
+				92E189F2AB1322C873AD9385 /* customJS.js */,
+				844F45FA6F28772288062E9A /* CustomMenu.swift */,
+				1D447D9FBEE1BE356AB9FB49 /* GNBackgroundAudio.m */,
+				70F98420D68B384E5229B944 /* GNConfigPreferences.m */,
+				A9CA9961A62E8541C1FA3CBF /* GNCustomHeaders.m */,
+				E8B3448D8EB04D76C53E9A0D /* GNFileWriterSharer.m */,
+				E914C5A7BF3452B3C527DD0B /* GNJSBridgeInterface.m */,
+				E2BBD88ADA2A983BA5A3223F /* GNLogManager.m */,
+				1AA879BA0D60C55F0EA833EA /* GNRegistrationManager.m */,
+				63FFDB65152A604A4A2302A0 /* GNSwiftUtilities.swift */,
+				3902D1D7C22FDF22AF5BF740 /* GoNativeJSBridgeLibrary.js */,
+				CC252F362FB1ACB21EF61649 /* GTMNSString+HTML.m */,
+				1F2DB21FC3A54DAB41E44F40 /* Images.xcassets */,
+				7CCA827141E6B9A6A002588F /* iosCustomCSS.css */,
+				EFCE02B3CD4111ACB9C9C3ED /* iosCustomJS.js */,
+				77F80F26D0C431C8AD8CF749 /* iosHeaderImage */,
+				2AF6D4BF140328D9B1C54F40 /* LaunchScreen.storyboard */,
+				1C2DD06F110985157ED4A1C2 /* LaunchScreenNav.storyboard */,
+				113B29CAE4B57C066B0362F2 /* LaunchScreenNoNav.storyboard */,
+				814C0FD43CCEC2ABDEA61EAB /* LEANActionManager.m */,
+				06022BC99085DD2BE1CF59BD /* LEANAppDelegate.m */,
+				094713F7CD838003C6CBEFCB /* LEANConfigUpdater.m */,
+				922C03CC6462B85818811F08 /* LEANDocumentSharer.m */,
+				81F29C7E1FB98D456E3C68EA /* LEANIcons.swift */,
+				1D6DFE298D39D2A6355EED4F /* LEANInstallation.m */,
+				7EE93A789206671DE9FF78E8 /* LEANJsCustomCodeExecutor.m */,
+				C4F0D582B60D611BA3E0E762 /* LEANKeyboardManager.m */,
+				BC483DD61D389E96ABD8A2FE /* LEANLaunchScreenManager.m */,
+				1552590174B61C9DBC992B8F /* LEANLoadingSpinnerManager.m */,
+				358D7798650720995FB364FD /* LEANLoginManager.m */,
+				B412CF523C0C6C49AD3137B2 /* LEANMenuViewController.m */,
+				FCC5B42583E485D5F6646459 /* LEANNavigationController.m */,
+				C76BBFC7FDC808CF1BA670DA /* LEANPDFManager.m */,
+				38354EF458E1661C8AABA2B9 /* LEANProfilePicker.m */,
+				5A377C16A76D4C6A4AE97216 /* LEANRegexRulesManager.m */,
+				A489AB469E78279D0045B54B /* LEANRootViewController.m */,
+				2B181AF6E072170F817997C2 /* LEANTabManager.m */,
+				61F1E48949D990EBFA948E62 /* LEANToolbarManager.m */,
+				F6DE5D8BBA5B932332D06798 /* LEANUrlCache.m */,
+				C6C99C7C64FB8C5694A2028F /* LEANUrlInspector.m */,
+				19AFA889720BD6405F094F2F /* LEANUtilities.m */,
+				EF0CD5B92E68DC16858940E2 /* LEANWebViewController.m */,
+				0BF9BF61382036989F207B9D /* LEANWebViewIntercept.m */,
+				98233B2B2BF3F9E5271BAE59 /* LEANWebViewPool.m */,
+				A18F476181820B5935AF4751 /* LEANWindowsManager.m */,
+				C4EF1372645C987F82E1F620 /* LiquidTitleView.swift */,
+				8CE8C4CB7277C0EEFD98DC09 /* localCache.zip */,
+				45567743BFDAF12BDD7D93AC /* main.m */,
+				4C5D87E1942DDEE08D57FB11 /* MedianEventsManager.m */,
+				73948EB7196D53F7C5DF08A3 /* MedianIOS-Info.plist */,
+				C8F462E69F84E76752548A32 /* MenuChildIcon.xib */,
+				A14E95CD69AA8D691C1C1539 /* MenuChildNoIcon.xib */,
+				25CADA5AEC6AA0D7C1A6506C /* MenuGroupIcon.xib */,
+				54DFFA190459ED6372620AEF /* MenuGroupNoIcon.xib */,
+				05DA90F69D0DD575EB4B54CB /* NSURL+LEANUtilities.m */,
+				F8F1140B22E5FC1AD5515872 /* offline.html */,
+				D9CB36D9D7CBB44BFF1C3F52 /* PrivacyInfo.xcprivacy */,
+				44A003B9D9DE2A30D307575F /* Reachability.m */,
+				6941439B389A88DC1F8A403A /* Settings.bundle */,
+				3643FA6842119073D7E6A935 /* SidebarHeaderView.xib */,
+				E0380EC97C230AB081827956 /* UIApplication+Extensions.swift */,
+				862E9B655021DAC6F6997D39 /* WebViewViewportManager.swift */,
+				529F7F66EC8EB40FC4778F16 /* WindowsController.swift */,
+			);
+			path = LeanIOS;
+			sourceTree = "<group>";
+		};
+		5F6DB8E0D77AC39B39F50712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2CF402FB20DF98E565FB18E /* Accounts.framework */,
+				FE22D754D1CA79DC3734FFC0 /* AppTrackingTransparency.framework */,
+				01B11F2E6BE3EDF77E477876 /* AudioToolbox.framework */,
+				6BDD55C5D7FE923494F9CF49 /* CFNetwork.framework */,
+				D00DCC049F0CA30D651DD96F /* CoreGraphics.framework */,
+				D3731CC7F7A878516D77861E /* CoreLocation.framework */,
+				044E723F0536AA4E8D961054 /* CoreText.framework */,
+				E9844FCFF2BF9CCC68536323 /* Foundation.framework */,
+				F91578F271BB211CCE449BE6 /* MediaAccessibility.framework */,
+				32C6EE6891F7DD3BACCDE51E /* MessageUI.framework */,
+				4F7998F067B2D68F5F4E733B /* QuartzCore.framework */,
+				A3E20AF340431D97E43A3A15 /* Security.framework */,
+				041093569D40976C3D87F83B /* Social.framework */,
+				1D3B9F450346FCB89E693CBA /* SystemConfiguration.framework */,
+				C1B95BA325D832EA4A1D2C5C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E316CFF965F85EC70E5BA86 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FC65E814D54F10BDC5F3A8CD /* TuistAssets+EsraUAESTORE.swift */,
+				07E52079F0D94AF835DCA808 /* TuistBundle+EsraUAESTORE.swift */,
+				999CA6176D8F6356CEB2E1EA /* TuistFonts+EsraUAESTORE.swift */,
+				18010DBBB7CBCFBCFCB1EF30 /* TuistPlists+EsraUAESTORE.swift */,
+				9273AE5E3F00286D929853CF /* TuistStrings+EsraUAESTORE.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D3327BD569E05D20E4DF1109 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				909E026F9FDE75813CDDAC6C /* RECommonFunctions.m */,
+				21BF511D373362C58498DC0F /* REFrostedContainerViewController.m */,
+				00AEAFED90FE5C5AAAE87178 /* REFrostedViewController.m */,
+				13B4CB82551CA72534A5B8FB /* UIImage+REFrostedViewController.m */,
+				F6C9866EC293CB33167EC4C1 /* UIView+REFrostedViewController.m */,
+				AA7F51D044F1DC9441464741 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+		F34000A3AAC6F105EAEB047B = {
+			isa = PBXGroup;
+			children = (
+				20CD3EC0EB22B00D377F22D5 /* Products */,
+				12492E2DCC09C9C5B776D2E7 /* Project */,
+				5F6DB8E0D77AC39B39F50712 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8677A09A175597EAB45E2567 /* EsraUAESTORETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9ACB09D1D45DC0CB29DACC /* Build configuration list for PBXNativeTarget "EsraUAESTORETests" */;
+			buildPhases = (
+				1DB69FD466149BD53B79FB33 /* Sources */,
+				A5A99DD9AF062AC6B83AAA45 /* Resources */,
+				08CAEF0666242B5F13797654 /* Frameworks */,
+				F9D7872D2A0D909D030A0C6C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				441DC6D82C40AA4870F179ED /* PBXTargetDependency */,
+			);
+			name = EsraUAESTORETests;
+			packageProductDependencies = (
+			);
+			productName = EsraUAESTORETests;
+			productReference = D42FF417D42DC8701F1F3202 /* EsraUAESTORETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4C90D3B6C651CC83FAFE797 /* EsraUAESTORE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570D8AFC6DD56BAE89C95E3C /* Build configuration list for PBXNativeTarget "EsraUAESTORE" */;
+			buildPhases = (
+				E6F65489C9DAC2CD7A0F79DD /* Sources */,
+				484BC6CE00D37C2869266A9B /* Resources */,
+				3C3CBE4977A277B1704D2CD1 /* Frameworks */,
+				EB89C7B7BC4D204C593F3401 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EsraUAESTORE;
+			packageProductDependencies = (
+				3413E65030388FF8C63F2CF9 /* GoNativeCore */,
+				CA9D54A1B05FDFABBE99A925 /* MedianIcons */,
+				E7C3C060E372F17168FC9163 /* ZipArchive */,
+			);
+			productName = EsraUAESTORE;
+			productReference = 15469A5C4119CEABE95DE67B /* EsraUAESTORE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		252FE2F30AD9A5BB09425AA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = GoNative.io;
+				TargetAttributes = {
+					8677A09A175597EAB45E2567 = {
+						TestTargetID = F4C90D3B6C651CC83FAFE797;
+					};
+				};
+			};
+			buildConfigurationList = 39DDF73EF633E8EC53769420 /* Build configuration list for PBXProject "EsraUAESTORE" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				en,
+				es,
+				"es-419",
+				et,
+				fa,
+				fi,
+				fr,
+				gd,
+				he,
+				hu,
+				it,
+				ja,
+				ko,
+				lt,
+				lv,
+				nl,
+				"nn-NO",
+				pt,
+				"pt-BR",
+				"pt-PT",
+				ru,
+				tr,
+				uk,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = F34000A3AAC6F105EAEB047B;
+			packageReferences = (
+				FAF552646CE65ED30F1BD194 /* XCRemoteSwiftPackageReference "ZipArchive" */,
+				38BE4F044C01406900C3445D /* XCRemoteSwiftPackageReference "median.go-native-core" */,
+				860688A5703DA06372E607C1 /* XCRemoteSwiftPackageReference "median.median-icons" */,
+			);
+			productRefGroup = 20CD3EC0EB22B00D377F22D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C90D3B6C651CC83FAFE797 /* EsraUAESTORE */,
+				8677A09A175597EAB45E2567 /* EsraUAESTORETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		484BC6CE00D37C2869266A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBF2B2989B32B60979A0D2B /* GoogleService-Info.plist in Resources */,
+				BE08501EB9F56995C01AB061 /* AppIcon in Resources */,
+				77519519E5BF448674629EC6 /* Assets.xcassets in Resources */,
+				7529EF491154BA78C268F8D7 /* Main.storyboard in Resources */,
+				B2A7E2CB03152A0415BFD0F1 /* BlobDownloader.js in Resources */,
+				7EB1ECF0C4F24E5EA26AE72F /* GoNativeJSBridgeLibrary.js in Resources */,
+				8BBDE0394C28636B977E0D77 /* Images.xcassets in Resources */,
+				97C57CC8C368B5652A0C69C8 /* LaunchScreen.storyboard in Resources */,
+				0A48ABE580F88EDE1186AE61 /* LaunchScreenNav.storyboard in Resources */,
+				E0FF61D3A6B3A3A3B01DF8DB /* LaunchScreenNoNav.storyboard in Resources */,
+				EAE72EC1401413F238CD671E /* MenuChildIcon.xib in Resources */,
+				391A27D3C361CDB77635E31C /* MenuChildNoIcon.xib in Resources */,
+				C5C9F11F2BC76740886C2F0E /* MenuGroupIcon.xib in Resources */,
+				F727E8606FC7FA76A07C485A /* MenuGroupNoIcon.xib in Resources */,
+				C3FBA9FDA42CD32D74A65BCA /* PrivacyInfo.xcprivacy in Resources */,
+				2D0144D0CE38B0E176603129 /* Settings.bundle in Resources */,
+				67710BD251F149D57C062D9E /* SidebarHeaderView.xib in Resources */,
+				E8FA120803FB44F50308C3A9 /* appConfig.json in Resources */,
+				DC6E7AE8A19C972C8B4DBDD6 /* appbeep.wav in Resources */,
+				5322E77360570EF4FA084366 /* Localizable.strings in Resources */,
+				8DBDF3847999A70AC3B9998A /* custom-icons.json in Resources */,
+				497C71E7D266EDE7A13794DA /* custom-icons.ttf in Resources */,
+				8D1142C86C24C032EACDC8EB /* customCSS.css in Resources */,
+				6293F5B304962900EC04EF04 /* customJS.js in Resources */,
+				7E0EE07AA405E107CD0CA4E4 /* InfoPlist.strings in Resources */,
+				D93CB0957ADD1C645F364AF9 /* iosCustomCSS.css in Resources */,
+				446BC278764DBA7FC957CBFE /* iosCustomJS.js in Resources */,
+				AD052B7DA371A89324B278F3 /* iosHeaderImage in Resources */,
+				643E2067FAC589BCD61A7A3D /* localCache.zip in Resources */,
+				08D6E04DCE91EFFE43FF67FC /* offline.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A99DD9AF062AC6B83AAA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DB69FD466149BD53B79FB33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BEFB42BD0E5CFABEEC3CE36 /* LeanIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F65489C9DAC2CD7A0F79DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C65C745769E3B74EFB078E /* TuistAssets+EsraUAESTORE.swift in Sources */,
+				EAF18161F4D67EAED858DB76 /* TuistBundle+EsraUAESTORE.swift in Sources */,
+				B9139417DB309EE10A7F7BA4 /* TuistFonts+EsraUAESTORE.swift in Sources */,
+				EEF7A8B961240D51F3438CDE /* TuistPlists+EsraUAESTORE.swift in Sources */,
+				6C07F00C6FC09047589FE4BF /* TuistStrings+EsraUAESTORE.swift in Sources */,
+				9199A8EA8F6A2BA0AE83F0A5 /* ContextMenuHandler.swift in Sources */,
+				1E33472CFCD749B83BFC7809 /* CustomMenu.swift in Sources */,
+				573B94C4B77F730CC698E14A /* GNBackgroundAudio.m in Sources */,
+				C7EADB314CCE047EB6533D17 /* GNConfigPreferences.m in Sources */,
+				5D25996D1DF61EDE88989AEF /* GNCustomHeaders.m in Sources */,
+				4007C453B8BF65EEF62FC9E9 /* GNFileWriterSharer.m in Sources */,
+				7FFF256BDA6145C37F4C58B5 /* GNJSBridgeInterface.m in Sources */,
+				798F00FC2BA6D95B59FE8BD3 /* GNLogManager.m in Sources */,
+				8E679FF00ACFF49E21682470 /* GNRegistrationManager.m in Sources */,
+				65F65EEA6D03FD03DD8A9702 /* GNSwiftUtilities.swift in Sources */,
+				53D190EBB86DD7F592D7058F /* GTMNSString+HTML.m in Sources */,
+				E7C34B09B7596581061B9857 /* LEANActionManager.m in Sources */,
+				D30504CCC1FAC0A00E07E7FF /* LEANAppDelegate.m in Sources */,
+				967600707068F08553C2138E /* LEANConfigUpdater.m in Sources */,
+				703AEEC5619F05BBA7A4510A /* LEANDocumentSharer.m in Sources */,
+				A6DE2F73E68D358A135C472B /* LEANIcons.swift in Sources */,
+				EF50A52C94041C2DEF8ADF07 /* LEANInstallation.m in Sources */,
+				7E180F918A0A9A128662AE99 /* LEANJsCustomCodeExecutor.m in Sources */,
+				85ED29C3CDC283891B71BE13 /* LEANKeyboardManager.m in Sources */,
+				8392D38EE4B822D4C46F794F /* LEANLaunchScreenManager.m in Sources */,
+				005E4F373254C56F831190B4 /* LEANLoadingSpinnerManager.m in Sources */,
+				7723681FB68E86988C18A460 /* LEANLoginManager.m in Sources */,
+				272115416C40B88E825D39FB /* LEANMenuViewController.m in Sources */,
+				C03102DFE8B4991D61C31D80 /* LEANNavigationController.m in Sources */,
+				35BE5BFC6D51C1198351BE3B /* LEANPDFManager.m in Sources */,
+				0A8F4A4948163DA8473596BD /* LEANProfilePicker.m in Sources */,
+				23FB2B4C63750753C5A7FE8B /* LEANRegexRulesManager.m in Sources */,
+				854D145C14B327A5F3F82E35 /* LEANRootViewController.m in Sources */,
+				74791CD33A378DE676DD39F8 /* LEANTabManager.m in Sources */,
+				E560CF3DF0C57D8A6873D243 /* LEANToolbarManager.m in Sources */,
+				6AEAE609377A04B6579FCD10 /* LEANUrlCache.m in Sources */,
+				1A47321C0BFA5E3F6A7FE7E3 /* LEANUrlInspector.m in Sources */,
+				72A057907D91A9810A3C9320 /* LEANUtilities.m in Sources */,
+				B5E358E3F3773EDE9D9AC5B3 /* LEANWebViewController.m in Sources */,
+				808CD01B81F5238426A86F84 /* LEANWebViewIntercept.m in Sources */,
+				CCEBE8A7623A9829C9480B51 /* LEANWebViewPool.m in Sources */,
+				552F7CC54A5733B93A612209 /* LEANWindowsManager.m in Sources */,
+				F18DC1FF1864B22A255020F5 /* LiquidTitleView.swift in Sources */,
+				8FD63EF31FD42BA854CC02F3 /* MedianEventsManager.m in Sources */,
+				BA47E90EC7B18E8E5B261016 /* NSURL+LEANUtilities.m in Sources */,
+				B55FAE7F27870FE9088E3FDB /* RECommonFunctions.m in Sources */,
+				ECDCBA1976E5F2C031067B18 /* REFrostedContainerViewController.m in Sources */,
+				89CEEB565D3FA5229E22B92B /* REFrostedViewController.m in Sources */,
+				A2651EBE37ACC1BE1471E41C /* UIImage+REFrostedViewController.m in Sources */,
+				64826367E9D93543CD08D010 /* UIView+REFrostedViewController.m in Sources */,
+				F61D60B3BE5CC8F101F019E3 /* UIViewController+REFrostedViewController.m in Sources */,
+				8E6395B0E5191992BB20A23A /* Reachability.m in Sources */,
+				E107B4CCB8D9B252970D0DD4 /* UIApplication+Extensions.swift in Sources */,
+				C44E3F216129D785BA0109CA /* WebViewViewportManager.swift in Sources */,
+				33002A9B52D602EB210492B9 /* WindowsController.swift in Sources */,
+				A826A82839C3F9E10657166F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		441DC6D82C40AA4870F179ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EsraUAESTORE;
+			target = F4C90D3B6C651CC83FAFE797 /* EsraUAESTORE */;
+			targetProxy = C4B53ABA8608E4B6FA83F954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30329F344F8ABB304A7424F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C256EEE33B673260A4982701 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		979EF7CA9D3A99EC91250AE2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75D932E806ADB4D85F30F116 /* ar */,
+				17790BD69106F8790F42A2A2 /* ca */,
+				2627B27A555A6052116C5BA1 /* cs */,
+				6A5C597999BBAE6E1B20623E /* da */,
+				BA47A0C7C04E49A44B8DE31C /* de */,
+				17DD222A6F48070412CC4921 /* en */,
+				EC73FCB099E46749281AB351 /* es */,
+				71980202F041B808D39A3F0F /* es-419 */,
+				8CAEEF99825AEB99750DF16A /* et */,
+				FC1F639714D7BAD9C2F87DAE /* fa */,
+				23A6F4AE40CBF05E99A8044F /* fi */,
+				C7872186F3D4BF5BDFE054CF /* fr */,
+				F9FC9AF26E90C5F671FE9CCC /* gd */,
+				A6A5B87E095E4511E9E09E91 /* he */,
+				7D7D62C61E398913E5DA7C23 /* hu */,
+				B4854711904CD119519C8A3B /* it */,
+				2E36AB23118D1F6FEBEC9E27 /* ja */,
+				DC4939E613B05EA38ABE1B75 /* ko */,
+				B3E98A2D9C5CABEC8827DB21 /* lt */,
+				18452464AE8C1FEB0873A85C /* lv */,
+				7E21B6F3F26F9B90CCBB4806 /* nl */,
+				1155F851F656CB3C3585BA20 /* nn-NO */,
+				F36B453C769687D8262CD74D /* pt */,
+				3C16C8A85188135C7B98368D /* pt-BR */,
+				F049C151D1C58C240EF3BAB1 /* pt-PT */,
+				4DFE9410DD58172F681B3AFA /* ru */,
+				3A588424E5719C40A8C0F69A /* tr */,
+				2CDC731A6837573245E206EE /* uk */,
+				DB160CC41F2F0DE68B65EDF2 /* zh-Hans */,
+				9B301DC947C7A8CA29C55222 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B87C0A5322F4799B01F231A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBB10D7361967F3D5D8B8B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F843487B819C5D052BB064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E19700C66E625F817000EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_SETTINGS_APP_NAME = "Esra UAE – STORE";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Project.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_LANGUAGE = en;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController";
+				INFOPLIST_FILE = "LeanIOS/MedianIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC $(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.odpqobl;
+				PRODUCT_NAME = EsraUAESTORE;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeanIOS/GonativeIO-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "GonativeIO-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F0F39595B2A6453AA29F2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController",
+				);
+				INFOPLIST_FILE = "LeanIOSTests/MedianIOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.odpqoblTests;
+				PRODUCT_NAME = EsraUAESTORETests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsraUAESTORE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EsraUAESTORE";
+				TEST_TARGET_NAME = EsraUAESTORE;
+			};
+			name = Release;
+		};
+		88FAB242E36BF26A41E99143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_SETTINGS_APP_NAME = "Esra UAE – STORE";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Project.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_LANGUAGE = en;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController";
+				INFOPLIST_FILE = "LeanIOS/MedianIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC $(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.odpqobl;
+				PRODUCT_NAME = EsraUAESTORE;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeanIOS/GonativeIO-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "GonativeIO-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B49B1FC680226BEE704013D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController",
+				);
+				INFOPLIST_FILE = "LeanIOSTests/MedianIOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.odpqoblTests;
+				PRODUCT_NAME = EsraUAESTORETests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EsraUAESTORE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EsraUAESTORE";
+				TEST_TARGET_NAME = EsraUAESTORE;
+			};
+			name = Debug;
+		};
+		C35F711D098BA93182378210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39DDF73EF633E8EC53769420 /* Build configuration list for PBXProject "EsraUAESTORE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F843487B819C5D052BB064 /* Debug */,
+				C35F711D098BA93182378210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570D8AFC6DD56BAE89C95E3C /* Build configuration list for PBXNativeTarget "EsraUAESTORE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FAB242E36BF26A41E99143 /* Debug */,
+				0E19700C66E625F817000EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9ACB09D1D45DC0CB29DACC /* Build configuration list for PBXNativeTarget "EsraUAESTORETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49B1FC680226BEE704013D6 /* Debug */,
+				4F0F39595B2A6453AA29F2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38BE4F044C01406900C3445D /* XCRemoteSwiftPackageReference "median.go-native-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "median.go-native-core";
+			requirement = {
+				kind = exactVersion;
+				version = 3.0.7;
+			};
+		};
+		860688A5703DA06372E607C1 /* XCRemoteSwiftPackageReference "median.median-icons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "median.median-icons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+		FAF552646CE65ED30F1BD194 /* XCRemoteSwiftPackageReference "ZipArchive" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZipArchive/ZipArchive";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3413E65030388FF8C63F2CF9 /* GoNativeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoNativeCore;
+		};
+		CA9D54A1B05FDFABBE99A925 /* MedianIcons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MedianIcons;
+		};
+		E7C3C060E372F17168FC9163 /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZipArchive;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 252FE2F30AD9A5BB09425AA2 /* Project object */;
+}
