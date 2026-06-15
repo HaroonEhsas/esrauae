@@ -11,6 +11,8 @@ Pods/
 
 # Tuist
 Derived/
+!Derived/Sources/
+!Derived/Sources/**
 *.xcodeproj
 *.xcworkspace
 !*.xcworkspace/contents.xcworkspacedata

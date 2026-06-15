@@ -34,15 +34,17 @@ workflows:
           cat ~/.swiftpm/configuration/registries.json
       - name: Install Tuist
         script: |
+          set -e
           export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.tuist/bin:$PATH"
           brew update || true
           brew tap tuist/tuist || true
           brew install tuist || true
           if ! command -v tuist >/dev/null 2>&1; then
-            curl -Ls https://install.tuist.io | bash || true
+            curl -Ls https://install.tuist.io | bash
           fi
           export PATH="$HOME/.tuist/bin:$PATH"
-          tuist --version || true
+          command -v tuist >/dev/null 2>&1
+          tuist --version
       - name: Generate workspace
         script: |
           set -e
@@ -51,12 +53,21 @@ workflows:
           export TUIST_TARGET_NAME="${TUIST_TARGET_NAME:-EsraUAESTORE}"
           export TUIST_BUNDLE_ID="${TUIST_BUNDLE_ID:-${BUNDLE_ID:-co.median.ios.odpqobl}}"
           export TUIST_APP_NAME="${TUIST_APP_NAME:-Esra UAE – STORE}"
-          if command -v tuist >/dev/null 2>&1; then
-            tuist --version
-            tuist generate
-          else
-            echo "tuist not found; using checked-in EsraUAESTORE.xcworkspace"
-          fi
+          tuist --version
+          tuist generate
+          for file in \
+            Derived/Sources/TuistAssets+EsraUAESTORE.swift \
+            Derived/Sources/TuistBundle+EsraUAESTORE.swift \
+            Derived/Sources/TuistFonts+EsraUAESTORE.swift \
+            Derived/Sources/TuistPlists+EsraUAESTORE.swift \
+            Derived/Sources/TuistStrings+EsraUAESTORE.swift
+          do
+            if [ ! -f "$file" ]; then
+              echo "Missing required Tuist generated file: $file"
+              exit 1
+            fi
+          done
+          echo "Tuist generated sources are present."
           REGISTRY_DIR="./EsraUAESTORE.xcworkspace/xcshareddata/swiftpm/configuration"
           mkdir -p "$REGISTRY_DIR"
           printf '%s\n' \
