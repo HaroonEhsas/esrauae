@@ -7,26 +7,11 @@ workflows:
         - push
     environment:
       vars:
-        DEVELOPMENT_TEAM:
-          value: ""
-          is_required: true
-          description: Apple Team ID to use for signing
-        BUNDLE_ID:
-          value: "io.gonative.ios"
-          is_required: true
-          description: App bundle identifier registered in App Store Connect
-        APP_STORE_CONNECT_ISSUER_ID:
-          value: ""
-          is_secret: true
-          description: App Store Connect Issuer ID
-        APP_STORE_CONNECT_KEY_ID:
-          value: ""
-          is_secret: true
-          description: App Store Connect Key ID
-        APP_STORE_CONNECT_PRIVATE_KEY:
-          value: ""
-          is_secret: true
-          description: App Store Connect private key content
+        DEVELOPMENT_TEAM: ""
+        BUNDLE_ID: "io.gonative.ios"
+        APP_STORE_CONNECT_ISSUER_ID: ""
+        APP_STORE_CONNECT_KEY_ID: ""
+        APP_STORE_CONNECT_PRIVATE_KEY: ""
     scripts:
       - name: Install Tuist
         script: |
@@ -66,11 +51,3 @@ workflows:
             -archivePath $CM_BUILD_DIR/build/Median.xcarchive \
             -exportPath $CM_BUILD_DIR/build/ipa \
             -exportOptionsPlist ExportOptions.plist
-    publishing:
-      app_store_connect:
-        should_upload: true
-        app_identifier: ${BUNDLE_ID}
-        api_key:
-          issuer_id: $APP_STORE_CONNECT_ISSUER_ID
-          key_id: $APP_STORE_CONNECT_KEY_ID
-          private_key: $APP_STORE_CONNECT_PRIVATE_KEY
