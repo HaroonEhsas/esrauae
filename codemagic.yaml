@@ -7,6 +7,12 @@ workflows:
       events:
         - push
     environment:
+      groups:
+        # Must match your Codemagic variable group name exactly.
+        # It should contain: APP_STORE_CONNECT_PRIVATE_KEY,
+        # APP_STORE_CONNECT_KEY_ID, APP_STORE_CONNECT_ISSUER_ID,
+        # DEVELOPMENT_TEAM, BUNDLE_ID
+        - app-store-credentials
       ios_signing:
         distribution_type: app_store
         bundle_identifier: co.median.ios.odpqobl
@@ -69,3 +75,11 @@ workflows:
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        api_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        key_id: $APP_STORE_CONNECT_KEY_ID
+        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+        # Uploads the IPA to App Store Connect after each successful build.
+        # Internal testers can install via TestFlight once processing finishes (~5-30 min).
+        submit_to_testflight: false
