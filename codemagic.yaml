@@ -6,12 +6,6 @@ workflows:
     triggering:
       events:
         - push
-    # 1) Upload an iOS Distribution certificate + App Store provisioning profile
-    #    in Codemagic: Team settings > codemagic.yaml settings > Code signing identities
-    # 2) Optional: add App Store Connect API key under Team integrations
-    # environment:
-    #   groups:
-    #     - app-store-credentials
     environment:
       ios_signing:
         distribution_type: app_store
@@ -25,49 +19,8 @@ workflows:
       - name: Configure Swift Package Registry
         script: |
           set -e
-          # Median packages (median.go-native-core, median.median-icons) resolve from
-          # packages.median.co. Without this, xcodebuild fails with:
-          # "no registry configured for 'median' scope"
           swift package-registry set --global "https://packages.median.co"
           swift package-registry set --global --scope median "https://packages.median.co"
-          echo "Global registry configuration:"
-          cat ~/.swiftpm/configuration/registries.json
-      - name: Install Tuist
-        script: |
-          set -e
-          export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.tuist/bin:$PATH"
-          brew update || true
-          brew tap tuist/tuist || true
-          brew install tuist || true
-          if ! command -v tuist >/dev/null 2>&1; then
-            curl -Ls https://install.tuist.io | bash
-          fi
-          export PATH="$HOME/.tuist/bin:$PATH"
-          command -v tuist >/dev/null 2>&1
-          tuist --version
-      - name: Generate workspace
-        script: |
-          set -e
-          export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.tuist/bin:$PATH"
-          export TUIST_PROJECT_NAME="${TUIST_PROJECT_NAME:-EsraUAESTORE}"
-          export TUIST_TARGET_NAME="${TUIST_TARGET_NAME:-EsraUAESTORE}"
-          export TUIST_BUNDLE_ID="${TUIST_BUNDLE_ID:-${BUNDLE_ID:-co.median.ios.odpqobl}}"
-          export TUIST_APP_NAME="${TUIST_APP_NAME:-Esra UAE – STORE}"
-          tuist --version
-          tuist generate
-          for file in \
-            Derived/Sources/TuistAssets+EsraUAESTORE.swift \
-            Derived/Sources/TuistBundle+EsraUAESTORE.swift \
-            Derived/Sources/TuistFonts+EsraUAESTORE.swift \
-            Derived/Sources/TuistPlists+EsraUAESTORE.swift \
-            Derived/Sources/TuistStrings+EsraUAESTORE.swift
-          do
-            if [ ! -f "$file" ]; then
-              echo "Missing required Tuist generated file: $file"
-              exit 1
-            fi
-          done
-          echo "Tuist generated sources are present."
           REGISTRY_DIR="./EsraUAESTORE.xcworkspace/xcshareddata/swiftpm/configuration"
           mkdir -p "$REGISTRY_DIR"
           printf '%s\n' \
@@ -85,6 +38,19 @@ workflows:
             '  },' \
             '  "version": 1' \
             '}' > "$REGISTRY_DIR/registries.json"
+          for file in \
+            Derived/Sources/TuistAssets+EsraUAESTORE.swift \
+            Derived/Sources/TuistBundle+EsraUAESTORE.swift \
+            Derived/Sources/TuistFonts+EsraUAESTORE.swift \
+            Derived/Sources/TuistPlists+EsraUAESTORE.swift \
+            Derived/Sources/TuistStrings+EsraUAESTORE.swift
+          do
+            if [ ! -f "$file" ]; then
+              echo "Missing required file: $file"
+              exit 1
+            fi
+          done
+          echo "Registry configured and required source files are present."
       - name: Set up code signing settings on Xcode project
         script: |
           set -e
@@ -92,16 +58,14 @@ workflows:
       - name: Build ipa for distribution
         script: |
           set -e
-          WORKSPACE="./${XCODE_WORKSPACE}"
-          SCHEME="${XCODE_SCHEME}"
-          if [ ! -d "$WORKSPACE" ]; then
-            echo "Workspace not found: $WORKSPACE"
+          if [ ! -d "./${XCODE_WORKSPACE}" ]; then
+            echo "Workspace not found: ${XCODE_WORKSPACE}"
             exit 1
           fi
-          echo "Building workspace: $WORKSPACE; scheme: $SCHEME; bundle id: $BUNDLE_ID"
+          echo "Building workspace: ${XCODE_WORKSPACE}; scheme: ${XCODE_SCHEME}; bundle id: ${BUNDLE_ID}"
           xcode-project build-ipa \
             --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-            --scheme "$SCHEME"
+            --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
