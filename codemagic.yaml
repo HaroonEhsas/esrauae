@@ -41,28 +41,49 @@ workflows:
         script: |
           set -e
           # choose workspace: prefer generated MedianIOS, fall back to EsraUAESTORE
-          if [ -f "MedianIOS.xcworkspace" ]; then
+          if [ -d "MedianIOS.xcworkspace" ] || [ -f "MedianIOS.xcworkspace" ]; then
             WORKSPACE="MedianIOS.xcworkspace"
-          elif [ -f "EsraUAESTORE.xcworkspace" ]; then
+          elif [ -d "EsraUAESTORE.xcworkspace" ] || [ -f "EsraUAESTORE.xcworkspace" ]; then
             WORKSPACE="EsraUAESTORE.xcworkspace"
           else
-            # fall back to any .xcworkspace in repo
+            # fall back to any .xcworkspace in repo (file or directory)
             WORKSPACE=$(ls *.xcworkspace 2>/dev/null | head -n 1 || true)
           fi
           if [ -z "$WORKSPACE" ]; then
-            echo "No .xcworkspace found in repo. Exiting."; exit 1
+            # try falling back to .xcodeproj
+            PROJ=$(ls *.xcodeproj 2>/dev/null | head -n 1 || true)
+            if [ -n "$PROJ" ]; then
+              echo "No .xcworkspace found; will build .xcodeproj: $PROJ"
+              WORKSPACE=""
+              PROJECT="$PROJ"
+            else
+              echo "No .xcworkspace or .xcodeproj found in repo. Exiting."; exit 1
+            fi
           fi
-          # derive scheme name from workspace filename (common convention)
-          SCHEME=$(basename "$WORKSPACE" .xcworkspace)
-          echo "Using workspace: $WORKSPACE and scheme: $SCHEME"
-          xcodebuild -workspace "$WORKSPACE" \
-            -scheme "$SCHEME" \
-            -configuration Release \
-            -sdk iphoneos \
-            archive \
-            -archivePath $CM_BUILD_DIR/build/$SCHEME.xcarchive \
-            DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
-            PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
+          if [ -n "$WORKSPACE" ]; then
+            SCHEME=$(basename "$WORKSPACE" .xcworkspace)
+            echo "Using workspace: $WORKSPACE and scheme: $SCHEME"
+            xcodebuild -workspace "$WORKSPACE" \
+              -scheme "$SCHEME" \
+              -configuration Release \
+              -sdk iphoneos \
+              archive \
+              -archivePath $CM_BUILD_DIR/build/$SCHEME.xcarchive \
+              DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
+              PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
+          else
+            # build using .xcodeproj
+            SCHEME=$(basename "$PROJECT" .xcodeproj)
+            echo "Using project: $PROJECT and scheme: $SCHEME"
+            xcodebuild -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -configuration Release \
+              -sdk iphoneos \
+              archive \
+              -archivePath $CM_BUILD_DIR/build/$SCHEME.xcarchive \
+              DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
+              PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
+          fi
       - name: Export IPA
         script: |
           cat > ExportOptions.plist <<EOF
