@@ -41,28 +41,11 @@ workflows:
         script: |
           set -e
           # choose workspace: prefer generated MedianIOS, fall back to EsraUAESTORE
-          if [ -d "MedianIOS.xcworkspace" ] || [ -f "MedianIOS.xcworkspace" ]; then
-            WORKSPACE="MedianIOS.xcworkspace"
-          elif [ -d "EsraUAESTORE.xcworkspace" ] || [ -f "EsraUAESTORE.xcworkspace" ]; then
-            WORKSPACE="EsraUAESTORE.xcworkspace"
-          else
-            # fall back to any .xcworkspace in repo (file or directory)
-            WORKSPACE=$(ls *.xcworkspace 2>/dev/null | head -n 1 || true)
-          fi
-          if [ -z "$WORKSPACE" ]; then
-            # try falling back to .xcodeproj
-            PROJ=$(ls *.xcodeproj 2>/dev/null | head -n 1 || true)
-            if [ -n "$PROJ" ]; then
-              echo "No .xcworkspace found; will build .xcodeproj: $PROJ"
-              WORKSPACE=""
-              PROJECT="$PROJ"
-            else
-              echo "No .xcworkspace or .xcodeproj found in repo. Exiting."; exit 1
-            fi
-          fi
+          # Search recursively for an .xcworkspace first, then .xcodeproj
+          WORKSPACE=$(find . -name "*.xcworkspace" -print -quit 2>/dev/null || true)
           if [ -n "$WORKSPACE" ]; then
             SCHEME=$(basename "$WORKSPACE" .xcworkspace)
-            echo "Using workspace: $WORKSPACE and scheme: $SCHEME"
+            echo "Found workspace: $WORKSPACE; using scheme: $SCHEME"
             xcodebuild -workspace "$WORKSPACE" \
               -scheme "$SCHEME" \
               -configuration Release \
@@ -72,17 +55,21 @@ workflows:
               DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
               PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
           else
-            # build using .xcodeproj
-            SCHEME=$(basename "$PROJECT" .xcodeproj)
-            echo "Using project: $PROJECT and scheme: $SCHEME"
-            xcodebuild -project "$PROJECT" \
-              -scheme "$SCHEME" \
-              -configuration Release \
-              -sdk iphoneos \
-              archive \
-              -archivePath $CM_BUILD_DIR/build/$SCHEME.xcarchive \
-              DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
-              PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
+            PROJECT=$(find . -name "*.xcodeproj" -print -quit 2>/dev/null || true)
+            if [ -n "$PROJECT" ]; then
+              SCHEME=$(basename "$PROJECT" .xcodeproj)
+              echo "No workspace found; using project: $PROJECT and scheme: $SCHEME"
+              xcodebuild -project "$PROJECT" \
+                -scheme "$SCHEME" \
+                -configuration Release \
+                -sdk iphoneos \
+                archive \
+                -archivePath $CM_BUILD_DIR/build/$SCHEME.xcarchive \
+                DEVELOPMENT_TEAM=${DEVELOPMENT_TEAM} \
+                PRODUCT_BUNDLE_IDENTIFIER=${BUNDLE_ID}
+            else
+              echo "No .xcworkspace or .xcodeproj found in repo. Exiting."; exit 1
+            fi
           fi
       - name: Export IPA
         script: |
